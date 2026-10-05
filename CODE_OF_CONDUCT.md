@@ -23,3 +23,16 @@ Examples of behavior that contributes to a positive environment for our communit
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at [aadigunjal0975@gmail.com](mailto:aadigunjal0975@gmail.com). All complaints will be reviewed and investigated promptly and fairly.
+
+---
+
+## Contact & Support
+
+![Email](https://img.shields.io/badge/Email-aadigunjal0975%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-aaditya09750-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+
+- **Developer:** Aaditya Gunjal - Full Stack Developer
+- **Email:** [aadigunjal0975@gmail.com](mailto:aadigunjal0975@gmail.com)
+- **LinkedIn:** [aaditya09750](https://www.linkedin.com/in/aaditya09750/)
+- **Phone:** +91 84335 09521

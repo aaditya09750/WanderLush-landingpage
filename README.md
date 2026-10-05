@@ -20,19 +20,23 @@ A modern, elegant, and fully responsive luxury travel showcase and accommodation
 
 **Persistent Floating Glassmorphic Topbar** - A top-anchored, translucent navigation bar with backdrop blur, brand logo, responsive navigation links, CTA schedule button, and smooth mobile drawer menu.
 
-**Hero Banner with Panoramic Volcanic Backdrop** - Bold editorial headline ("Experience the Magic of Bromo"), frosted glass pill badge, primary action CTA with hover micro-animations, travel perspective insight cards, and quick social links.
+**100vh Full Viewport Hero & Continuous Looping Carousel** - Full-bleed viewport banner with continuous 4-slide auto-looping destination transitions, Framer Motion scroll parallax depth, and stationary in-place blur crossfade with zero vertical shift.
 
-**5-Tile Mount Bromo Journey Showcase** - Responsive asymmetric grid presenting Country Above the Clouds, Lava Jeep Tour, Bromo Hiking, Luhur Poten Temple, and Horse Riding with video preview badges, traveler avatar stacks, and smooth hover elevation.
+**5-Tile Mount Bromo Journey with On-Hover Blur Overlay** - Responsive asymmetric grid presenting Bromo expeditions with on-hover background image blur (`blur(14px)`), minimal frosted glass travel specs (elevation, duration), and clean action CTA without text ghosting.
 
-**Atmospheric Landscape Story Section** - Tactile dotted canvas background highlighting Mount Bromo's surreal volcanic sea of sand, savannahs, and crater geology.
+**Atmospheric Landscape Story Section** - Tactile dotted canvas background highlighting Mount Bromo's volcanic caldera with sticky scroll-driven translation.
 
-**Luxury Villas & Hotels Catalog with Interactive Filters** - Comprehensive accommodation catalog featuring interactive search triggers (Date, Budget, Guest), real-time category chips (Resort, Villa, Hotel, Cottage, Homestay, Eco Lodge), star rating badges, and price overlays.
+**Luxury Stays Showcase with 8 Categories & Pagination** - Comprehensive accommodations catalog across 8 categories (All, Resort, Villa, Hotel, Cottage, Homestay, Guesthouse, Eco Lodge) featuring in-card continuous multi-photo gallery carousels with micro-dots and client-side pagination (6 cards per page) with auto-scroll navigation.
+
+**Interactive Search Bar Popovers** - Custom dropdown overlays for date ranges (quick presets & date pickers), nightly budget tiers, and guest/room counter steppers.
 
 **Panoramic Mountain Elevation Explorer** - Grayscale Mount Bromo panoramic vista highlighting Gunung Semeru (3676m), Gunung Widodaren (2614m), Gunung Bromo (2392m), and a hover-activated color focal window for Gunung Batok (2400m).
 
 **Editorial Travel Stories Grid** - Curated blog section showcasing local cultural traditions, author credentials, sea of sand jeep expeditions, and sunrise viewpoints.
 
-**Newsletter & Multi-Column Travel Index** - 4-column footer with email subscription form, social channels, legal links, and customer support channels.
+**Sticky Parallax Curtain Reveal Footer** - Pinned bottom footer with scroll-driven parallax transform (`-70px` $\rightarrow$ `0px`), responsive 3-column mobile navigation layout, and newsletter subscription form.
+
+**Custom Luxury Scrollbar** - Modern thin 8px scrollbar styled for Webkit and Firefox browsers matching Wanderlush luxury dark aesthetics.
 
 ## Technology Stack
 
@@ -57,8 +61,8 @@ A modern, elegant, and fully responsive luxury travel showcase and accommodation
 
 ```bash
 # Clone the repository
-git clone git@github.com:aaditya09750/wonderLush-Ui.git
-cd wonderLush-Ui
+git clone git@github.aaditya:aaditya09750/WanderLush-landingpage.git
+cd WanderLush-landingpage
 
 # Install dependencies using pnpm
 pnpm install
@@ -130,10 +134,12 @@ wonderLush-Ui/
 │   │   ├── BlogCard.tsx                # Editorial blog card
 │   │   ├── SearchBar.tsx               # Date, budget, guest search trigger
 │   │   ├── FilterChips.tsx             # Category filter chips
+│   │   ├── Pagination.tsx              # Accommodations pagination controls
 │   │   └── index.ts                    # Barrel export
 │   └── index.ts                        # Master components barrel export
 ├── constants/                          # Centralized immutable datasets
 │   ├── images.ts                       # High-resolution CDN assets
+│   ├── hero.ts                         # Hero destinations & carousel presets
 │   ├── navigation.ts                   # Header & footer routes
 │   ├── journeys.ts                     # Tour activities array
 │   ├── stays.ts                        # Accommodations dataset
@@ -160,6 +166,7 @@ wonderLush-Ui/
     ├── journey.ts                      # Journey & feature tile types
     ├── stay.ts                         # Stay item & category types
     ├── blog.ts                         # BlogPost & author types
+    ├── hero.ts                         # Hero slide & carousel item types
     ├── newsletter.ts                   # Newsletter payload & API response
     └── index.ts                        # Barrel export
 ```
@@ -203,26 +210,34 @@ wonderLush-Ui/
 
 ### Hero Section
 
-- High-resolution Mount Bromo volcanic backdrop
+- 100vh full-bleed viewport banner with continuous 4-slide auto-looping carousel
+- High-resolution Mount Bromo volcanic backdrop with continuous blur crossfade
+- Stationary in-place text & image transition with zero vertical shift
 - Frosted glass eyebrow pill badge with smooth spring reveal
 - Primary Explore Now CTA with animated arrow gap expansion
 - Perspective travel insights notes and social channel icon dock
+- Framer Motion scroll parallax depth and sticky canvas background pattern
 
 ### The Journey of Bromo
 
 - 5-tile responsive asymmetric showcase
+- On-hover background image blur (`blur(14px)`) with minimal frosted glass travel specs (elevation, duration)
 - Video play indicator badges and traveler avatar stacks
 - Split editorial description with Remind Me and Learn More actions
+- Clean, non-distorted hover transitions without text ghosting
 
 ### Story Section
 
 - Minimalist tactile dotted canvas background
 - Editorial reflection on Mount Bromo's surreal volcanic crater sea of sand
+- Sticky scroll-driven translation for atmospheric depth
 
 ### Selection of Stays
 
-- Accommodation catalog with real-time category filtering (Resort, Villa, Hotel, Cottage, etc.)
-- Integrated date, budget, and guest search triggers
+- Accommodation catalog with real-time category filtering across 8 categories (All, Resort, Villa, Hotel, Cottage, Homestay, Guesthouse, Eco Lodge)
+- In-card continuous multi-photo gallery carousels with micro-dot active indicators
+- Client-side pagination (6 cards per page) with smooth auto-scroll to `#stays` section
+- Interactive search bar popovers for date ranges, nightly budget tiers, and guest count steppers
 - Glassmorphic 4.9 rating badges, location tags, and pricing badges
 
 ### Panorama Mountain Explorer
@@ -238,9 +253,16 @@ wonderLush-Ui/
 
 ### Newsletter & Footer
 
-- 4-column navigation index covering About, Support, FAQ, and Newsletter
+- Sticky bottom parallax curtain reveal footer (`.content-curtain` scroll transform `y: -70px` $\rightarrow$ `0px`)
+- Responsive 3-column navigation index layout optimized for compact mobile screens
+- 4-column desktop index covering About, Support, FAQ, and Newsletter
 - Email input form with RFC 5322 validation and API integration
 - Copyright note and social links
+
+### Custom Luxury Scrollbar
+
+- Ultra-sleek 8px custom scrollbar styled for WebKit and Firefox browsers matching WanderLush luxury dark aesthetics
+- Smooth scroll track and thumb transitions
 
 ## Responsive Breakpoints
 
@@ -303,14 +325,14 @@ wonderLush-Ui/
 ## Contact & Support
 
 ![Email](https://img.shields.io/badge/Email-aadigunjal0975%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-![LinkedIn](https://img.shields.io/badge/LinkedIn-aadityagunjal0975-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-aaditya09750-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
 ![WhatsApp](https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 
 **Get In Touch**
 
 - **Email:** [aadigunjal0975@gmail.com](mailto:aadigunjal0975@gmail.com)
 - **Phone:** +91 84335 09521
-- **LinkedIn:** [aadityagunjal0975](https://www.linkedin.com/in/aadityagunjal0975/)
+- **LinkedIn:** [aaditya09750](https://www.linkedin.com/in/aaditya09750/)
 - **Location:** Dombivli, Maharashtra, India
 
 **Professional Inquiries Welcome** - Open to freelance projects, collaboration opportunities, and full-time engineering roles.

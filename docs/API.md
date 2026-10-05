@@ -5,7 +5,7 @@
 
 **Developer:** Aaditya Gunjal - Full Stack Developer
 
-WanderLush exposes RESTful endpoints implemented via Next.js Route Handlers in `src/app/api/`.
+WanderLush exposes RESTful endpoints implemented via Next.js Route Handlers in `app/api/`.
 
 ---
 
@@ -58,12 +58,12 @@ curl -X POST http://localhost:3000/api/newsletter \
 
 ## 2. GET /api/stays
 
-Queries accommodations with optional category filtering.
+Queries accommodations with optional category filtering across 8 distinct accommodation types.
 
 - **URL:** `/api/stays`
 - **Method:** `GET`
 - **Query Parameters:**
-  - `category` (optional, string): e.g. `Resort`, `Villa`, `Hotel`, `All`
+  - `category` (optional, string): One of `All`, `Resort`, `Villa`, `Hotel`, `Cottage`, `Homestay`, `Guesthouse`, `Eco Lodge` (defaults to `All`)
 
 ### Success Response (`200 OK`)
 
@@ -79,7 +79,12 @@ Queries accommodations with optional category filtering.
       "price": "$280",
       "rating": "4.9",
       "category": "Villa",
-      "image": "https://images.pexels.com/photos/34790496/pexels-photo-34790496.jpeg?auto=compress&cs=tinysrgb&w=900"
+      "image": "https://images.pexels.com/photos/34790496/pexels-photo-34790496.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "images": [
+        "https://images.pexels.com/photos/34790496/pexels-photo-34790496.jpeg?auto=compress&cs=tinysrgb&w=900",
+        "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=900",
+        "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=900"
+      ]
     }
   ]
 }
@@ -90,3 +95,16 @@ Queries accommodations with optional category filtering.
 ```bash
 curl -X GET "http://localhost:3000/api/stays?category=Resort"
 ```
+
+---
+
+## 3. Contact & Support
+
+![Email](https://img.shields.io/badge/Email-aadigunjal0975%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-aaditya09750-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+
+- **Developer:** Aaditya Gunjal - Full Stack Developer
+- **Email:** [aadigunjal0975@gmail.com](mailto:aadigunjal0975@gmail.com)
+- **LinkedIn:** [aaditya09750](https://www.linkedin.com/in/aaditya09750/)
+- **Phone:** +91 84335 09521
