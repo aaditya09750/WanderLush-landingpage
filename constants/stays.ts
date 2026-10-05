@@ -1,0 +1,323 @@
+import { IMAGES } from "./images";
+import type { StayItem, StayCategory } from "@/types";
+
+export const STAY_FILTERS: StayCategory[] = [
+  "All",
+  "Resort",
+  "Villa",
+  "Hotel",
+  "Cottage",
+  "Homestay",
+  "Guesthouse",
+  "Eco Lodge",
+];
+
+export const STAYS_DATA: StayItem[] = [
+  // --- Villas ---
+  {
+    id: "stay-villa-1",
+    name: "Bromo Valley Villas",
+    place: "East Java, Indonesia",
+    price: "$280",
+    rating: "4.9",
+    category: "Villa",
+    image: IMAGES.villa1,
+    images: [
+      IMAGES.villa1,
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-villa-2",
+    name: "Tengger Highland Sanctuary",
+    place: "Cemoro Lawang, East Java",
+    price: "$315",
+    rating: "4.9",
+    category: "Villa",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-villa-3",
+    name: "Whispering Sands Villa",
+    place: "Tosari, Pasuruan",
+    price: "$265",
+    rating: "4.8",
+    category: "Villa",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80",
+      IMAGES.villa1,
+    ],
+  },
+
+  // --- Resorts ---
+  {
+    id: "stay-resort-1",
+    name: "Plataran Bromo Resort",
+    place: "Wonokitri, Tosari, East Java",
+    price: "$285",
+    rating: "4.9",
+    category: "Resort",
+    image: IMAGES.villa2,
+    images: [
+      IMAGES.villa2,
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-resort-2",
+    name: "Jiwa Jawa Resort Bromo",
+    place: "Wonotoro, Sukapura, East Java",
+    price: "$287",
+    rating: "4.9",
+    category: "Resort",
+    image: IMAGES.villa3,
+    images: [
+      IMAGES.villa3,
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-resort-3",
+    name: "Lava View Peak Resort",
+    place: "Cemoro Lawang, Probolinggo",
+    price: "$245",
+    rating: "4.8",
+    category: "Resort",
+    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=900&q=80",
+      IMAGES.villa2,
+    ],
+  },
+
+  // --- Hotels ---
+  {
+    id: "stay-hotel-1",
+    name: "Grand Whiz Hotel Bromo",
+    place: "Sukapura, Probolinggo",
+    price: "$195",
+    rating: "4.8",
+    category: "Hotel",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-hotel-2",
+    name: "Java Banana Highland Hotel",
+    place: "Wonotoro, East Java",
+    price: "$220",
+    rating: "4.9",
+    category: "Hotel",
+    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-hotel-3",
+    name: "Bromo Permai Skyline Hotel",
+    place: "Cemoro Lawang, East Java",
+    price: "$175",
+    rating: "4.7",
+    category: "Hotel",
+    image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+
+  // --- Cottages ---
+  {
+    id: "stay-cottage-1",
+    name: "Mount Bromo Pine Cottage",
+    place: "Ngadisari, East Java",
+    price: "$160",
+    rating: "4.8",
+    category: "Cottage",
+    image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-cottage-2",
+    name: "Edelweiss Highland Chalet",
+    place: "Tosari, Pasuruan",
+    price: "$185",
+    rating: "4.9",
+    category: "Cottage",
+    image: "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-cottage-3",
+    name: "Tengger Timber Wood Cabin",
+    place: "Sukapura, East Java",
+    price: "$145",
+    rating: "4.7",
+    category: "Cottage",
+    image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+
+  // --- Homestays ---
+  {
+    id: "stay-homestay-1",
+    name: "Sukapura Heritage Homestay",
+    place: "Sukapura, East Java",
+    price: "$95",
+    rating: "4.9",
+    category: "Homestay",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-homestay-2",
+    name: "Tengger Hearth Homestay",
+    place: "Ngadisari, Probolinggo",
+    price: "$85",
+    rating: "4.8",
+    category: "Homestay",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-homestay-3",
+    name: "Caldera View Village Stay",
+    place: "Cemoro Lawang, East Java",
+    price: "$90",
+    rating: "4.9",
+    category: "Homestay",
+    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+
+  // --- Guesthouses ---
+  {
+    id: "stay-guesthouse-1",
+    name: "Tengger Hillside Guesthouse",
+    place: "Wonokitri, Pasuruan",
+    price: "$120",
+    rating: "4.8",
+    category: "Guesthouse",
+    image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-guesthouse-2",
+    name: "Cemoro Lawang Haven",
+    place: "Cemoro Lawang, East Java",
+    price: "$135",
+    rating: "4.9",
+    category: "Guesthouse",
+    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-guesthouse-3",
+    name: "Bromo Sunrise Guesthouse",
+    place: "Tosari, East Java",
+    price: "$115",
+    rating: "4.7",
+    category: "Guesthouse",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+
+  // --- Eco Lodges ---
+  {
+    id: "stay-ecolodge-1",
+    name: "Bromo Eco Caldera Sanctuary",
+    place: "Sukapura, East Java",
+    price: "$210",
+    rating: "4.9",
+    category: "Eco Lodge",
+    image: "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-ecolodge-2",
+    name: "Java Rainforest Canopy Lodge",
+    place: "Probolinggo, East Java",
+    price: "$230",
+    rating: "4.9",
+    category: "Eco Lodge",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+  {
+    id: "stay-ecolodge-3",
+    name: "Bamboo Valley Botanical Retreat",
+    place: "Tosari, Pasuruan",
+    price: "$190",
+    rating: "4.8",
+    category: "Eco Lodge",
+    image: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=900&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+    ],
+  },
+];
