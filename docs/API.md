@@ -105,6 +105,7 @@ curl -X GET "http://localhost:3000/api/stays?category=Resort"
 ![WhatsApp](https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 
 - **Developer:** Aaditya Gunjal - Full Stack Developer
+- **Live URL:** [https://wanderlush-eight.vercel.app/](https://wanderlush-eight.vercel.app/)
 - **Email:** [aadigunjal0975@gmail.com](mailto:aadigunjal0975@gmail.com)
 - **LinkedIn:** [aaditya09750](https://www.linkedin.com/in/aaditya09750/)
 - **Phone:** +91 84335 09521

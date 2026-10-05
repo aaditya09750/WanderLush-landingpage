@@ -5,7 +5,9 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.17-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Architecture](https://img.shields.io/badge/Architecture-App_Router_SSR-blue?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-wanderlush--eight.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://wanderlush-eight.vercel.app/)
 
+**Live URL:** [https://wanderlush-eight.vercel.app/](https://wanderlush-eight.vercel.app/)  
 **Developer:** Aaditya Gunjal - Full Stack Developer
 
 ---
@@ -113,6 +115,7 @@ sequenceDiagram
 ![WhatsApp](https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 
 - **Developer:** Aaditya Gunjal - Full Stack Developer
+- **Live URL:** [https://wanderlush-eight.vercel.app/](https://wanderlush-eight.vercel.app/)
 - **Email:** [aadigunjal0975@gmail.com](mailto:aadigunjal0975@gmail.com)
 - **LinkedIn:** [aaditya09750](https://www.linkedin.com/in/aaditya09750/)
 - **Phone:** +91 84335 09521

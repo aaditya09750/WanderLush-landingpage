@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Synchronized live production deployment URL across site constants, OpenGraph metadata, sitemap generator, `robots.txt`, and documentation to `https://wanderlush-eight.vercel.app/`.
 - Refined footer responsive layout for mobile viewports into a streamlined 3-column navigation flow.
 - Upgraded `/api/stays` route handler to support query filtering across all 8 stay categories and multi-image schemas.
 - Enhanced `@/hooks/useStayFilter` to maintain pagination state and trigger automatic page-top scroll on index change.

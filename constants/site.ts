@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   tagline: "A Place Where Nature and Adventure Unite",
   description:
     "Discover Mount Bromo, its volcanic landscapes, memorable experiences, and exceptional stays with Wanderlush.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://wanderlush.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://wanderlush-eight.vercel.app",
   author: "Aaditya Gunjal",
   developer: {
     name: "Aaditya Gunjal",

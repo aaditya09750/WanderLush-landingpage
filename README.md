@@ -9,9 +9,11 @@
 ![Responsive](https://img.shields.io/badge/Responsive-Design-00D4FF?style=for-the-badge&logo=css3&logoColor=white)
 ![Lucide](https://img.shields.io/badge/Lucide_Icons-1.52.0-F56565?style=for-the-badge&logo=lucide&logoColor=white)
 ![pnpm](https://img.shields.io/badge/pnpm-9.15.4-F69220?style=for-the-badge&logo=pnpm&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-wanderlush--eight.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://wanderlush-eight.vercel.app/)
 
 A modern, elegant, and fully responsive luxury travel showcase and accommodation discovery experience built with Next.js 16 (App Router), React 19, TypeScript 5.9, and Tailwind CSS v4. Features an immersive Mount Bromo volcanic editorial design, Lenis hardware-accelerated smooth scrolling, floating glassmorphic topbar navigation, interactive 5-tile journey grid with video triggers, filterable luxury villas and resort catalog with category chips, grayscale mountain panorama with dynamic focal zoom window, and editorial travel blog.
 
+**Live Demo:** [https://wanderlush-eight.vercel.app/](https://wanderlush-eight.vercel.app/)  
 **Developer:** Aaditya Gunjal - Full Stack Developer
 
 ## Core Features
@@ -330,6 +332,7 @@ wonderLush-Ui/
 
 **Get In Touch**
 
+- **Live Demo:** [https://wanderlush-eight.vercel.app/](https://wanderlush-eight.vercel.app/)
 - **Email:** [aadigunjal0975@gmail.com](mailto:aadigunjal0975@gmail.com)
 - **Phone:** +91 84335 09521
 - **LinkedIn:** [aaditya09750](https://www.linkedin.com/in/aaditya09750/)
